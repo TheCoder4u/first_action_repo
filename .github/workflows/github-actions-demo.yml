@@ -26,5 +26,7 @@ jobs:
             echo "Event name: ${{ github. }}"
             echo "Current ref: ${{ github.ref }}"
 
-      - name: List all files in the repository
-        run: ls -R
+      - name: List files in the repository
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree

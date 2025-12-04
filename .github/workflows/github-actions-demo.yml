@@ -16,10 +16,6 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
-
-jobs:
-  Build:
-    runs-on: ubuntu-latest
     steps:
       - run: |
           echo "🎉 The job was triggered by event: ${{ github.event_name }}"
@@ -31,6 +27,9 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+#jobs:
+#  Build:
+#    runs-on: ubuntu-latest
 
 #    steps:
 #      - name: Checkout repository
